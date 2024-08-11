@@ -1,3 +1,4 @@
+
 (function($) {
   $.fn.mauGallery = function(options) {
     var options = $.extend($.fn.mauGallery.defaults, options);
@@ -58,6 +59,7 @@
     });
 
     $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
+    
     $(".gallery").on("click", ".mg-prev", () =>
       $.fn.mauGallery.methods.prevImage(options.lightboxId)
     );
@@ -153,6 +155,8 @@
           index = i ;
         }
       });
+      //l'index doit diminuer à chaque fois qu'on clique sur la flèche suivante
+      index--
       next =
         imagesCollection[index] ||
         imagesCollection[imagesCollection.length - 1];
@@ -163,9 +167,11 @@
       $("img.gallery-item").each(function() {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
           activeImage = $(this);
+
         }
       });
       let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
+      
       let imagesCollection = [];
       if (activeTag === "all") {
         $(".item-column").each(function() {
@@ -192,8 +198,11 @@
           index = i;
         }
       });
+      //l'index doit augmenter à chaque fois qu'on clique sur la flèche suivante
+      index++
       next = imagesCollection[index] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
+    
     },
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
@@ -221,7 +230,9 @@
     showItemTags(gallery, position, tags) {
       var tagItems =
         '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
-      $.each(tags, function(index, value) {
+      
+        $.each(tags, function(index, value) {
+          
         tagItems += `<li class="nav-item active">
                 <span class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
       });
@@ -240,8 +251,9 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
-
+      //il fallait ajouter la classe active
+      $(this).addClass("active active-tag");
+      
       var tag = $(this).data("images-toggle");
 
       $(".gallery-item").each(function() {

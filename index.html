@@ -2,19 +2,77 @@
 <html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-	<title>Nina-Carducci - Photographe</title>
-	<meta name="description" content="photographie">
-
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	
+	<link rel="icon" href="./assets/images/favicon.ico.svg" >
+
 	<meta charset="UTF-8">
+	<meta name="description" content="Photographe freelance à Bordeaux, polyvalente et réactive, 
+	je vous propose de réaliser vos photos de mariage, vos portraits, vos photos d'entreprises et de concerts.">
+	<meta name="author" content="Nina Carducci">
+	<meta name="language" content="fr-FR">
+	<meta name="robots" content="index, follow">
+	<!-- Open Graph -->
+	<meta property="og:title" content="Nina Carducci | Photographe à Bordeaux">
+	<meta property="og:description" content="Photographe freelance à Bordeaux, polyvalente et réactive, 
+	je vous propose de réaliser vos photos de mariage, vos portraits, vos photos d'entreprises et de concerts.">
+	<meta property="og:image" content="https://maximehouguet.github.io/projet4OC/assets/images/nina.webp">
+	<meta property="og:url" content="https://maximehouguet.github.io/">
+	<meta property="og:type" content="website">
+
+	<!--Twitter Card -->
+	<meta name="twitter:title" content="Nina Carducci | Photographe à Bordeaux">
+	<meta name="twitter:description" content="Photographe freelance à Bordeaux, polyvalente et réactive, 
+	je vous propose de réaliser vos photos de mariage, vos portraits, vos photos d'entreprises et de concerts.">
+	<meta name="twitter:image" content="https://maximehouguet.github.io//projet4OC/assets/images/nina.webp">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content="https://maximehouguet.github.io/" >
+
+	<title>Nina Carducci | Photographe à Bordeaux</title>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="./assets/maugallery.min.js"></script>
+	<script src="./assets/scripts.min.js"></script>
+	<!--Référencement local schema.org-->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Nina Carducci",
+			"image": "https://maximehouguet.github.io/assets/images/nina.webp",
+			"url": "https://maximehouguet.github.io/",
+			"telephone": "05 56 67 78 89",
+			"priceRange": "50€ - 400€",
+			"address": {
+			  "@type": "PostalAddress",
+			  "streetAddress": "68 avenue Alsace-Lorraine",
+			  "addressLocality": "Bordeaux",
+			  "postalCode": "33200",
+			  "addressCountry": "FR"
+			},
+			"geo": {
+			  "@type": "GeoCoordinates",
+			  "latitude": 44.8465743,
+			  "longitude": -0.6065364999999999
+			},
+			"openingHoursSpecification": {
+			  "@type": "OpeningHoursSpecification",
+			  "dayOfWeek": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday"
+			  ],
+			  "opens": "10:00",
+			  "closes": "19:00"
+			},
+			"sameAs": "https://www.instagram.com/ninacarducci.photo/?hl=fr" 
+		  }
+	  </script>
 </head>
 <body>
 <div class="top-header">
@@ -71,7 +129,7 @@
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.png" title="Nina Carducci" alt="Photo de Nina-Carducci">
+		<img src="./assets/images/nina.webp" title="Nina Carducci" alt="Photo de Nina-Carducci">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -189,13 +247,9 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.png" alt="photo de camera">
+			<img src="./assets/images/camera.webp" alt="photo de camera">
 		</div>
 	</div>
 </div>
-<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="./assets/maugallery.min.js" defer></script>
-<script src="./assets/scripts.min.js" defer></script>
 </body>
 </html>
