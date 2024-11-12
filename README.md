@@ -1,4 +1,6 @@
-<img src="./assets/images/camera.webp" alt="Camera" width="300px">
+<div style="text-align: center;">
+    <img src="./assets/images/camera.webp" alt="Camera" width="300px">
+</div>
 
 # Projet 4 : Débuggez et optimisez un site de photographe
 
