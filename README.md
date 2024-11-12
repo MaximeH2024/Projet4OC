@@ -1,4 +1,4 @@
-![Camera](./assets/images/camera.webp)
+<img src="./assets/images/camera.webp" alt="Camera" width="300px">
 
 # Projet 4 : Débuggez et optimisez un site de photographe
 
