@@ -1,8 +1,9 @@
-<div style="text-align: center;">
+<div style="display: flex; justify-content: center; align-items: center;">
     <img src="./assets/images/camera.webp" alt="Camera" width="300px">
 </div>
 
-# Projet 4 : Débuggez et optimisez un site de photographe
+# Projet 4 : 
+Débuggez et optimisez un site de photographe
 
 ## Description
 Dans ce projet, vous travaillerez en tant que développeur freelance pour optimiser le site web d'un photographe. Votre objectif est d'améliorer les performances, le référencement (SEO) et l'accessibilité du site. Cela inclut l'identification des problèmes de chargement, de structure de code, et de référencement, puis l'application des modifications nécessaires.
