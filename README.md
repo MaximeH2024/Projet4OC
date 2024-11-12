@@ -6,7 +6,7 @@
 Débuggez et optimisez un site de photographe
 
 ## Description
-Dans ce projet, vous travaillerez en tant que développeur freelance pour optimiser le site web d'un photographe. Votre objectif est d'améliorer les performances, le référencement (SEO) et l'accessibilité du site. Cela inclut l'identification des problèmes de chargement, de structure de code, et de référencement, puis l'application des modifications nécessaires.
+Dans ce projet, l'objectif est d'optimiser la performance, le référencement naturel (SEO), et l'accessibilité du site web d'un photographe. Une série d'analyses de performance a été réalisée avec des outils tels que Lighthouse, suivie d'améliorations pour garantir un chargement rapide, une meilleure visibilité sur les moteurs de recherche, et une accessibilité renforcée pour tous les utilisateurs, y compris ceux en situation de handicap.
 
 ## Objectifs
 - Analyser les performances actuelles du site.
